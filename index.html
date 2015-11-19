@@ -151,9 +151,8 @@
         var itemDetailParams = {
           type: 'general'
         };
-        var topItemsQuery = MP.api.segment('Product Detail Screen', ['Product Name'], itemDetailParams).done(function(results)
-          {console.log(results.values());
-          });
+        var topItemsQuery = MP.api.segment('Product Detail Screen', ['Product Name'], itemDetailParams)
+        console.log(topItemsQuery)
         
 
         /* Get top events */
