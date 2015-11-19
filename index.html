@@ -234,7 +234,7 @@
             $('.date-day').text(day.toString());
             $('.date-time').text(time);
             $('.date-pm').text(ampm);
-            var pageViewParams = {limit: 25, type:'general', unit:'month', from: moment(), to: moment()}
+            var pageViewParams = {limit: 25, type:'general', unit:'minute', from: moment(), to: moment()}
             var pageViewQuery = MP.api.segment('Product Detail Screen', 'Product Name', pageViewParams)
             pageViewQuery.done(function(results){
                 var data = {}
